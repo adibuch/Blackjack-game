@@ -15,9 +15,6 @@ def calculate_score(cards):
         cards.append(1)
     return sum(cards)
 
-
-
-
 def compare(u_score, c_score):
     if u_score == c_score:
         return "Draw"
@@ -39,8 +36,8 @@ def play_game():
     print(logo)
     your_card = []
     computer_card = []
-    computer_score = 0
-    your_score = 0
+    computer_score = -1
+    your_score = -1
     game_is_over = False
 
     for _ in range(2):
